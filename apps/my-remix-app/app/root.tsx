@@ -5,6 +5,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import { Button } from "shared-ui";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -17,6 +18,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         {children}
+        <Button onClick={() => alert("hello from monorepo")}>COOL BRO</Button>
         <ScrollRestoration />
         <Scripts />
       </body>
