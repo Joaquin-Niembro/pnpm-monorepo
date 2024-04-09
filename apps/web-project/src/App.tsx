@@ -1,12 +1,9 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import {Header} from 'shared-ui'
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import { Header } from "shared-ui";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div>
@@ -19,7 +16,7 @@ function App() {
       </div>
       <Header>Vite + React</Header>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
